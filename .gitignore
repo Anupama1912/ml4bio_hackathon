@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.env
+.DS_Store
+
+# data / outputs
+data/*.csv
+data/*.fasta
+results/*.csv
+results/*.txt
+
+# model/cache
+.cache/
+*.pt
+*.bin
+*.safetensors
