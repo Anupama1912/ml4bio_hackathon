@@ -33,8 +33,8 @@ python final_mlb.py
 
 This will generate:
 
-- predictions.csv
-- top10.txt
+- `predictions.csv`
+- `top10.txt`
 
 ## Running Query Generation
 
