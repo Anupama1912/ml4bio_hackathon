@@ -33,14 +33,12 @@ python final_mlb.py
 
 This will generate:
 
-```bash
-predictions.csv
-top10.txt
-```
+- predictions.csv
+- top10.txt
 
 ## Running Query Generation
 
-To reproduce the active learning query generation procedure:
+To reproduce the active learning query generation procedure (for queries 2 & 3):
 
 ```bash
 python hackathon_with_query_strategy.py
@@ -57,7 +55,7 @@ Output Format
 
 ## Notes
 
-- We use ESM-2 (facebook/esm2_t30_150M_UR50D) for feature extraction.
+- We use ESM-2 (`facebook/esm2_t30_150M_UR50D`) for feature extraction.
 - The final feature representation includes mean sequence embedding, wild-type residue embedding, mutated residue embedding, delta embedding, and positional embedding.
 - The final ensemble consists of three Random Forest and two Extra Trees regressors with different feature subsampling strategies.
 - Large pretrained model weights are downloaded automatically from Hugging Face during execution.
